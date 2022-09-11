@@ -13,6 +13,9 @@ while True:
     birthday3=random.choice('12')
     birthday4=random.choice('0123456789')
     domain   =random.choice(['gmail.com','outlook.com','yahoo.com','protonmail.com'])
-    
-    f.write(f'{first}.{last}{birthday1}{birthday2}{birthday3}{birthday4}@{domain}\n')
+    country  =random.choice(['CN','BR','UK','US'])
+    max      =random.choice('1234')
+    pay      =random.choice(['CC','DC'])
+    #emmanuelsouza53@gmail.com:eusoudos3 | SUBSCRIBED | Country: BR | Free trial: false | Current plan: Padr u00E3o | Has UHD: false | Max streams: 2 | Payment method: CC
+    f.write(f'{first}.{last}{birthday1}{birthday2}{birthday3}{birthday4}@{domain} | SUBSCRIBED | Country:{country} | Free trial: false | Current plan: Padr u00E3o | Has UHD: false | Max streams: {max} | Payment method: {pay}\n')
     q+=1
